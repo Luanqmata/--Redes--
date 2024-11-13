@@ -1,5 +1,5 @@
 # Automatos_Jflap
-Faculdades IESGO - Prof: João Gress ⚙️
+Faculdades IESGO - Prof: João Gress 🌎
 
 4° Semestre
 
