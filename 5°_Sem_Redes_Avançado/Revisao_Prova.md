@@ -297,3 +297,94 @@ Suporta RIP e OSPF internamente, mas BGP para o mundo exterior.
 Robusto e altamente configurável.
 
 ```
+-------------------------------------------------------------
+```md
+
+✅ Seu conhecimento até agora – avaliação:
+O que você mandou:
+VLANs na Camada 2 ✔️
+
+Separam um switch físico em redes lógicas ✔️
+
+Reduzem tráfego de broadcast ✔️
+
+Switches de Camada 3 existem e usam BGP, RIP, OSPF ✔️
+
+RIP limitado a 15 saltos, bom pra redes pequenas ✔️
+
+OSPF é mais seguro e usado em redes grandes ✔️
+
+BGP trabalha junto com os dois (mais ou menos, vamos falar disso também) ➖
+
+Nota: você tá bem no caminho! Mas agora, bora refinar os pontos sobre Switches de Camada 2, como pediu
+
+
+🎛️ Switches de Camada 2 – o que você precisa saber
+📍 Operam na Camada 2 (Enlace de Dados) do modelo OSI:
+Usam endereços MAC para encaminhar quadros.
+
+São responsáveis por comutação (switching) local — ou seja, conectam dispositivos dentro da mesma rede (LAN).
+
+
+
+🧠 Principais funções:
+Aprendizagem de MAC: ele escuta quem está em qual porta e armazena isso na tabela MAC.
+
+Encaminhamento: envia quadros apenas pra porta correta (com base no MAC de destino).
+
+Filtragem: bloqueia envio desnecessário de pacotes pra todas as portas (diferente de um hub).
+
+Domínio de colisão separado por porta: cada porta é um domínio de colisão isolado, ou seja, não tem interferência como no hub.
+
+Mas compartilham o mesmo domínio de broadcast — a menos que você use VLANs.
+
+
+
+
+🔌 Switches + VLANs:
+VLANs permitem ao switch de Camada 2 criar vários domínios de broadcast separados.
+
+Mesmo sendo Camada 2, ele consegue separar redes logicamente, mas não faz roteamento entre elas por conta própria.
+
+Pra VLANs se comunicarem entre si, é necessário:
+
+Um roteador externo (Roteamento entre VLANs)
+
+Ou um switch de Camada 3, que já tem a capacidade de roteamento interno.
+
+
+
+
+⚙️ Switches de Camada 3 – só pra comparar
+Operam na Camada 2 E 3 do modelo OSI.
+
+Fazem roteamento entre VLANs, ou seja, conseguem falar entre redes separadas.
+
+Podem rodar protocolos de roteamento dinâmico como:
+
+RIP (simples, 15 saltos)
+
+OSPF (avançado, para empresas)
+
+BGP (usado pra interligar grandes redes, como provedores e sistemas autônomos)
+
+🚨 Obs:
+BGP não “suporta” o RIP ou OSPF — ele atua em outro nível, conectando redes inteiras.
+
+É mais comum em roteadores e switches de backbone (provedores, datacenters).
+
+
+
+
+⚡Resumo prático do que falta sobre switches Camada 2:
+
+Conceito	Camada 2 (Switch Básico)
+Roteia IPs?	                  ❌ Não
+Encaminha por MAC?	          ✔️ Sim
+Usa VLAN?                    	✔️ Sim
+Separa domínio de colisão?	  ✔️ Por porta
+Separa domínio de broadcast?	❌ Só com VLAN
+Usa RIP/OSPF/BGP?	            ❌ Não (isso é Camada 3)
+Tráfego entre VLANs?        	❌ Precisa de Camada 3
+
+```
