@@ -34,6 +34,11 @@ Camada de aplicação: Faz parte do modelo OSI
 ```txt
 ## R : A camada de enlace gerencia o meio de transmissão e controla o acesso, garantindo que os dispositivos só transmitam quando o meio estiver disponível.
 
-### Entendimento : 
+### Entendimento : A camada de enlace gerencia os dipositivos por meio dos endereços MAC's Garantindo ordem entre transmissões.
+( Ultiliza Token Ring e CSMA/CD (Ethernet) para esse controle.
+Garante a entrega livre de erros entre dois nós ) 
+ATUAL NO HARDWRE DAS PLACAS DE REDES.
 ```
 ---------------------------------------------------------------------------------------------------------------------------
+
+
