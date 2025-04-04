@@ -134,4 +134,39 @@ Além disso, VLANs aumentam a segurança e a organização da rede, permitindo i
 ### Entendimento : Diferente dos switches tradicionais, que operam apenas com endereços MAC, os switches de Camada 3 são capazes de tomar decisões baseadas em endereços IP, funcionando de forma similar a um roteador.
 ```
 ---------------------------------------------------------------------------------------------------------------------------
+# LEMBRETE OSPF e RIP :
+
+### RIP = "Roteador Ingênuo e Preguiçoso"
+### Se a empresa tem uma rede simples e pequena, RIP pode ser suficiente. Mas para qualquer coisa maior ou que precise de desempenho e segurança, OSPF é a melhor escolha.
+
+### OSPF = "Organizado, Sofisticado, Profissional e Ferido de guerra"
+### Se a empresa crescer, RIP pode virar um problema por conta da limitação de saltos e lentidão, enquanto OSPF já está preparado para expansão.
+
+
+```lua
+                          +-----------------------------+
+                          |        ROTEADOR (Camada 3) |
+                          |  - Usa RIP / OSPF           |
+                          |  - Roteia entre redes/VLANs |
+                          +--------------+--------------+
+                                         |
+                                (Roteamento IP)
+                                         |
+                  +----------------------+--------------------+
+                  |                                           |
+     +------------v------------+               +-------------v------------+
+     |   SWITCH CAMADA 3       |               |   SWITCH CAMADA 2        |
+     | - Divide VLANs          |               | - Divide VLANs           |
+     | - Pode usar RIP/OSPF ✅ |               | - NÃO usa RIP/OSPF ❌   |
+     | - Faz roteamento L3     |               | - Trabalha com MAC       |
+     +------------+------------+               +-------------+------------+
+                  |                                           |
+          +-------+---------+                          +------+-------+
+          |      VLAN 10    |                          |     VLAN 20  |
+          | (Ex: Financeiro)|                          |  (Ex: RH)    |
+          +-----------------+                          +--------------+
+
+
+```
+---------------------------------------------------------------------------------------------------------------------------
 ## 11.
