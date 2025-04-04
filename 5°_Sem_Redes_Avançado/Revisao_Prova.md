@@ -1,4 +1,4 @@
-# REVISÂO PROVA - I.E.S.G.O  
+# REVISãO PROVA - I.E.S.G.O  
 
 ## Aluno : Luan B S C
 ## Professor : JP Gress
