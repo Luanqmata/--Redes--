@@ -212,6 +212,8 @@ Dispositivos típicos: Roteadores, Switches de Camada 3.
 
 Protocolos: IP, ICMP, ARP, RIP, OSPF, BGP.
 
+
+
 🔌 Switches
 Dispositivo de camada 2 (e também camada 3, nos modelos avançados).
 
