@@ -22,12 +22,7 @@ Camada de aplicação: Faz parte do modelo OSI
 
 
 
-# 1. Uma empresa de tecnologia está implementando uma nova infraestrutura de rede para melhorar
-# a comunicação entre seus servidores. Durante o processo, um engenheiro de redes explica que a
-# camada de enlace de dados desempenha um papel fundamental na conversão de pacotes em
-# quadros ou células para transmissão, garantindo o endereçamento correto e a integridade dos
-# dados. Ele menciona que alguns protocolos utilizam quadros de tamanho variável, enquanto
-# outros utilizam células de tamanho fixo
+# 1. Uma empresa de tecnologia está implementando uma nova infraestrutura de rede para melhorar a comunicação entre seus servidores. Durante o processo, um engenheiro de redes explica que a camada de enlace de dados desempenha um papel fundamental na conversão de pacotes em quadros ou células para transmissão, garantindo o endereçamento correto e a integridade dos dados. Ele menciona que alguns protocolos utilizam quadros de tamanho variável, enquanto outros utilizam células de tamanho fixo
 
 ## R : A camada de enlace realiza a conversão de pacotes em quadros, adicionando endereços de origem e destino, controle de erros e fragmentação quando necessário.
 
