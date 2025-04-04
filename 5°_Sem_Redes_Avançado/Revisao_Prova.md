@@ -40,5 +40,13 @@ Garante a entrega livre de erros entre dois nós )
 ATUAL NO HARDWRE DAS PLACAS DE REDES.
 ```
 ---------------------------------------------------------------------------------------------------------------------------
+## 3. Uma empresa está implementando uma rede sem fio para conectar seus dispositivos móveis e garantir uma comunicação eficiente. Durante a configuração, um engenheiro de redes explica que, ao contrário da maioria das redes cabeadas, o Wi-Fi utiliza um mecanismo de confirmação para garantir a entrega correta dos quadros. Esse mecanismo envolve o envio de uma mensagem de reconhecimento (ACK) para confirmar a recepção bem-sucedida dos dados.
 
+```txt
+## R : A confiabilidade na transmissão pode ser implementada na camada de enlace, mas geralmente é delegada à camada de transporte.
+
+### Entendimento : O ACK é um protocolo que atual em rede WI-FI e ele garante a entrega tem tratamento de erros e transmissao garantida EX: TPC 
+
+```
+---------------------------------------------------------------------------------------------------------------------------
 
