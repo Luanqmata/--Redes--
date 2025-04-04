@@ -183,4 +183,115 @@ Cut-Through: Encaminha o quadro assim que le o endereço MAC de destino.
 Fragment-Free: Aguarda os 64 primeiros bytes para evitar colisões antes de encaminhar.
 ```
 ---------------------------------------------------------------------------------------------------------------------------
+```md
 
+
+📶 Camada 2 – Enlace de Dados (Data Link Layer)
+Atua diretamente com o endereçamento MAC.
+
+Responsável pela comunicação direta entre dispositivos em uma mesma rede local (LAN).
+
+Define como os dados são empacotados em quadros (frames).
+
+Dispositivos típicos: Switches, Bridges.
+
+Faz detecção de erros e controle de fluxo.
+
+Switches operam aqui (aprendem MACs e encaminham frames corretamente).
+
+
+
+🌐 Camada 3 – Rede (Network Layer)
+Responsável pelo endereçamento lógico (IP) e roteamento.
+
+Determina o melhor caminho para os dados irem de uma rede a outra.
+
+Trabalha com pacotes (packets).
+
+Dispositivos típicos: Roteadores, Switches de Camada 3.
+
+Protocolos: IP, ICMP, ARP, RIP, OSPF, BGP.
+
+🔌 Switches
+Dispositivo de camada 2 (e também camada 3, nos modelos avançados).
+
+Aprende os endereços MAC e encaminha dados somente para a porta correta.
+
+Permite comunicação full-duplex (transmissão e recepção simultâneas).
+
+Cada porta de um switch = domínio de colisão separado.
+
+Reduz colisões, melhora desempenho.
+
+
+
+🌎 Roteadores
+Dispositivos de camada 3.
+
+Conectam redes diferentes e escolhem o melhor caminho para pacotes.
+
+Usam endereços IP e tabelas de roteamento.
+
+Podem rodar protocolos de roteamento dinâmico como RIP, OSPF, BGP.
+
+
+
+🧱 VLANs (Virtual LANs)
+Criam redes lógicas separadas dentro de um mesmo switch físico.
+
+Permitem segmentar domínios de broadcast.
+
+Melhoram segurança, controle de tráfego e organização da rede.
+
+Para comunicação entre VLANs, é necessário roteamento (Inter-VLAN Routing), feito por roteadores ou switches de camada 3.
+
+
+
+✉️ Pacotes
+Unidade de dados na Camada 3 (rede).
+
+Contêm:
+
+Endereço IP de origem e destino
+
+Dados de controle
+
+Dados a serem entregues
+
+São encapsulados em quadros (Camada 2) para transmissão física.
+
+
+
+📡 RIP (Routing Information Protocol)
+Protocolo de roteamento interno (IGP).
+
+Usa distância (número de saltos) como métrica para escolher o caminho.
+
+Limite de 15 saltos → redes maiores que isso não são alcançáveis.
+
+Atualiza a tabela de roteamento a cada 30 segundos (pode causar lentidão).
+
+Simples, mas pouco escalável. Usado em redes menores ou para fins educacionais.
+
+Versões:
+
+RIP v1: Não suporta CIDR nem VLSM.
+
+RIP v2: Suporta sub-redes, VLSM, e autenticação.
+
+
+
+🌍 BGP (Border Gateway Protocol)
+Protocolo de roteamento entre sistemas autônomos (EGP).
+
+Usado para conectar grandes redes, como as da Internet.
+
+Trabalha com endereços IP e políticas.
+
+Usa o conceito de AS (Autonomous Systems).
+
+Suporta RIP e OSPF internamente, mas BGP para o mundo exterior.
+
+Robusto e altamente configurável.
+
+```
