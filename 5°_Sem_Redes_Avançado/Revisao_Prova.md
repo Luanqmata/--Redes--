@@ -55,4 +55,13 @@ ATUAL NO HARDWRE DAS PLACAS DE REDES.
 
 ```
 ---------------------------------------------------------------------------------------------------------------------------
+## 4. Uma empresa está expandindo sua infraestrutura de rede e precisa decidir sobre a melhor abordagem para conectar seus dispositivos. O administrador de redes explica que switches desempenham um papel fundamental na comunicação em redes cabeadas, operando na camada 2 e utilizando endereços MAC para gerenciar o tráfego de dados. Ele também menciona que tanto redes cabeadas quanto sem fio utilizam o protocolo LLC (IEEE 802.2), mas o protocolo MAC pode variar conforme a tecnologia empregada. Com base nesse cenário
 
+# assinale a alternativa correta sobre switches e arquiteturas de redes:
+
+```txt
+## R : Switches operam na camada 2 e utilizam endereços MAC para encaminhar quadros de forma eficiente.
+
+### Entendimento : Switch's tambem operam na camada 2 (enlance) e usam MAC's para encaminhar dados (evitando colisões), Diferente de hubs replicam os dados para todas as portas, switches filtram e encaminham os quadros apenas para o destinatário correto.
+```
+---------------------------------------------------------------------------------------------------------------------------
