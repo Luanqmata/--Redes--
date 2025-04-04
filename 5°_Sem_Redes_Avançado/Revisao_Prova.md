@@ -145,12 +145,12 @@ Além disso, VLANs aumentam a segurança e a organização da rede, permitindo i
 
 ```lua
                           +-----------------------------+
-                          |        ROTEADOR (Camada 3) |
+                          |        ROTEADOR (Camada 3)  |
                           |  - Usa RIP / OSPF           |
                           |  - Roteia entre redes/VLANs |
                           +--------------+--------------+
                                          |
-                                (Roteamento IP)
+                                  (Roteamento IP)
                                          |
                   +----------------------+--------------------+
                   |                                           |
@@ -169,4 +169,18 @@ Além disso, VLANs aumentam a segurança e a organização da rede, permitindo i
 
 ```
 ---------------------------------------------------------------------------------------------------------------------------
-## 11.
+## 11. Uma empresa está adquirindo novos switches para otimizar o desempenho da rede e minimizar a latência na transmissão de dados. Durante a seleção do equipamento, o administrador de redes explica que os switches utilizam diferentes métodos de comutação para encaminhar quadros de dados. O método store-and-forward verifica erros antes de encaminhar os quadros, enquanto o cut-through permite um encaminhamento mais rápido, transmitindo os dados assim que identifica o endereço MAC de destino. Já o método fragment-free aguarda os primeiros 64 bytes antes de encaminhar o quadro, equilibrando velocidade e confiabilidade. Com base nesse cenário. 
+
+### assinale a alternativa correta sobre os métodos de comutação:
+```txt
+## R : O método store-and-forward verifica a integridade do quadro antes de encaminhá-lo, garantindo maior confiabilidade.
+
+## Entendimento :
+Store-and-Forward: Armazena todo o quadro, verifica erros e depois encaminha.
+
+Cut-Through: Encaminha o quadro assim que le o endereço MAC de destino.
+
+Fragment-Free: Aguarda os 64 primeiros bytes para evitar colisões antes de encaminhar.
+```
+---------------------------------------------------------------------------------------------------------------------------
+
