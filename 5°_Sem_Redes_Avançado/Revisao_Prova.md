@@ -30,12 +30,7 @@ Camada de aplicação: Faz parte do modelo OSI
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-2. Uma equipe de administradores de rede está configurando um novo ambiente de comunicação
-para uma empresa. Durante a configuração, um dos técnicos explica que a camada de enlace de
-dados gerencia o meio de transmissão e controla o acesso, garantindo que os dispositivos
-possam enviar dados sem colisões. Além disso, ele menciona que essa camada opera sob
-protocolos específicos e é controlada principalmente por hardware, enquanto as camadas
-superiores dependem de software.
+# 2. Uma equipe de administradores de rede está configurando um novo ambiente de comunicaçã para uma empresa. Durante a configuração, um dos técnicos explica que a camada de enlace dedados gerencia o meio de transmissão e controla o acesso, garantindo que os dispositivospossam enviar dados sem colisões. Além disso, ele menciona que essa camada opera sobprotocolos específicos e é controlada principalmente por hardware, enquanto as camadassuperiores dependem de software.
 
 ## R : A camada de enlace gerencia o meio de transmissão e controla o acesso, garantindo que os dispositivos só transmitam quando o meio estiver disponível.
 
