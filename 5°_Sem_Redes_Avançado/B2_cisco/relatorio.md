@@ -718,3 +718,187 @@ Building configuration...
 [OK]
 Switch#
 ```
+visitantes
+
+```bash
+
+Switch>enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 70
+Switch(config-vlan)#name
+% Incomplete command.
+Switch(config-vlan)#Visitantes
+                    ^
+% Invalid input detected at '^' marker.
+	
+Switch(config-vlan)#name Visitantes
+Switch(config-vlan)#exit
+Switch(config)#enable
+% Incomplete command.
+Switch(config)#! Porta trunk (uplink)
+Switch(config)#
+Switch(config)#interface fa0/1
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#interface range fa0/2 - 6
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#switchport access vlan 70
+Switch(config-if-range)#switchport port-security
+Switch(config-if-range)#switchport port-security maximum 1
+Switch(config-if-range)#switchport port-security violation shutdown
+Switch(config-if-range)#switchport port-security mac-address sticky
+Switch(config-if-range)#no shutdown
+Switch(config-if-range)#interface range fa0/7 - 24
+Switch(config-if-range)#shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/7, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/8, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/9, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/10, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/11, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/12, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/13, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/14, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/15, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/16, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/17, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/18, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/19, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/20, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/21, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/22, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/23, changed state to administratively down
+
+%LINK-5-CHANGED: Interface FastEthernet0/24, changed state to administratively down
+Switch(config-if-range)#exit
+Switch(config)#exit
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+write memory
+Building configuration...
+[OK]
+
+```
+
+CONFIGURANDO DHCP
+![image](https://github.com/user-attachments/assets/89d9f6e3-71f2-427e-a684-67dcc2356b4f)
+![image](https://github.com/user-attachments/assets/bb779b9d-bb15-45b9-bc61-623b9a168d91)
+	
+
+```bash
+configure terminal
+ip routing
+
+interface vlan 10
+ ip address 192.168.10.1 255.255.255.0
+ ip helper-address 192.168.99.11
+ no shutdown
+exit
+
+interface vlan 20
+ ip address 192.168.20.1 255.255.255.0
+ ip helper-address 192.168.99.11
+ no shutdown
+exit
+
+interface vlan 30
+ ip address 192.168.30.1 255.255.255.0
+ ip helper-address 192.168.99.11
+ no shutdown
+exit
+
+interface vlan 40
+ ip address 192.168.40.1 255.255.255.0
+ ip helper-address 192.168.99.11
+ no shutdown
+exit
+
+interface vlan 50
+ ip address 192.168.50.1 255.255.255.0
+ ip helper-address 192.168.99.11
+ no shutdown
+exit
+
+interface vlan 60
+ ip address 192.168.60.1 255.255.255.0
+ ip helper-address 192.168.99.11
+ no shutdown
+exit
+
+interface vlan 70
+ ip address 192.168.70.1 255.255.255.0
+ ip helper-address 192.168.99.11
+ no shutdown
+exit
+
+
+```
+Configuração final DHCP usando ICL
+```bash
+Switch>ENABLE
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#IPIip routing
+Switch(config)#interface vlan 10
+Switch(config-if)#ip address 192.168.10.1 255.255.255.0
+Switch(config-if)#ipiEXIT
+Switch(config)#interface vlan 10
+Switch(config-if)#
+Switch(config-if)#ip address 192.168.10.1 255.255.255.0
+Switch(config-if)#ip helper-address 192.168.99.11
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#interface vlan 20
+Switch(config-if)#ip address 192.168.20.1 255.255.255.0
+Switch(config-if)#ip helper-address 192.168.99.11
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#interface vlan 30
+Switch(config-if)#ip address 192.168.30.1 255.255.255.0
+Switch(config-if)#ip helper-address 192.168.99.11
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#interface vlan 40
+Switch(config-if)#ip address 192.168.40.1 255.255.255.0
+Switch(config-if)#ip helper-address 192.168.99.11
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#interface vlan 50
+Switch(config-if)#ip address 192.168.50.1 255.255.255.0
+Switch(config-if)#ip helper-address 192.168.99.11
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#interface vlan 60
+Switch(config-if)#ip address 192.168.60.1 255.255.255.0
+Switch(config-if)#ip helper-address 192.168.99.11
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#interface vlan 70
+Switch(config-if)#ip address 192.168.70.1 255.255.255.0
+Switch(config-if)#ip helper-address 192.168.99.11
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#interface vlan 99
+Switch(config-if)#ip address 192.168.99.1 255.255.255.0
+Switch(config-if)#no shutdown
+Switch(config-if)#exit
+Switch(config)#
+```
