@@ -163,9 +163,10 @@ VLAN Name                             Status    Ports
 ```
 
 
-Comandos das vlans 10 a 70
+# Comandos das vlans 10 a 70
+---
 
-vlan adm
+## vlan ADMINITRAÇÃO
 
 ```bash 
 
@@ -212,7 +213,9 @@ Building configuration...
 Switch#
 
 ```
-fin
+---
+## vlan FINANCEIRO
+---
 ```bash
 
 Switch>enable
@@ -246,7 +249,9 @@ Building configuration...
 Switch#
 
 ```
-RH
+---
+RH## vlan RH
+---
 ```bash
 Switch>enable
 Switch#configure terminal
@@ -271,7 +276,9 @@ write memory
 Building configuration...
 [OK]
 ``` 
-TI
+---
+## vlan TI
+---
 ```bash
 Switch>enable 
 Switch#configure terminal
@@ -300,7 +307,9 @@ write memory
 Building configuration...
 [OK]
 ```
-sup tec
+---
+## vlan SUPORTE_TECNICO
+---
 ```bash 
 Switch(config)#vlan 50
 Switch(config-vlan)#name Suporte_Tecnico
@@ -321,8 +330,9 @@ Building configuration...
 [OK]
 Switch#
 ```
-
-gerencia
+---
+## vlan Gerencia
+---
 ```bash
 Switch>enable
 Switch#configure terminal
@@ -352,9 +362,11 @@ Switch#
 ```
 
 ------------------------
-4.
+# Fazendo segurança da rede
 
-desabilitando portas e especificando MAC
+## desabilitando portas e especificando MAC
+---
+## 2960 FIN
 ```bash
 Switch>enable
 Switch#configure terminal
@@ -409,8 +421,9 @@ write memory
 Building configuration...
 [OK]
 ```
-
-fin
+---
+## 2960 ADM
+---
 ```bash
 
 Switch>enable
@@ -474,7 +487,9 @@ Building configuration...
 [OK]
 Switch#
 ```
-RH
+---
+## 2960 RH
+---
 ```bash
 Switch>enable
 Switch#configure terminal
@@ -536,7 +551,9 @@ Building configuration...
 [OK]
 
 ```
-TI
+---
+## 2960 TI
+---
 ```bash
 Switch>enable
 Switch#configure terminal
@@ -589,9 +606,9 @@ Building configuration...
 Switch#
 
 ```
-
-sup _ tecnico
-
+---
+## 2960 SUPORTE_TECNICO
+---
 ```bash
 
 Switch>enable
@@ -654,8 +671,9 @@ Building configuration...
 [OK]
 Switch#
 ```
-
-gerencia 
+---
+# 2960 GERENCIA
+---
 ```bash 
 
 Switch>enable
@@ -722,8 +740,9 @@ Building configuration...
 [OK]
 Switch#
 ```
-visitantes
-
+---
+# 2960 visitantes
+---
 ```bash
 
 Switch>enable
@@ -801,9 +820,11 @@ Building configuration...
 [OK]
 
 ```
-
-CONFIGURANDO DHCP
+----
+# CONFIGURANDO SERVIDOR DHCP
+### -- IMAGEM DO STATIC ENDEREÇO PEDIDO PELO PROFESSOR
 ![image](https://github.com/user-attachments/assets/89d9f6e3-71f2-427e-a684-67dcc2356b4f)
+### -- SEPARAÇÃO DAS VLANS PARA O USO DO CLI
 ![image](https://github.com/user-attachments/assets/bb779b9d-bb15-45b9-bc61-623b9a168d91)
 	
 
@@ -855,7 +876,9 @@ exit
 
 
 ```
-Configuração final DHCP usando ICL
+---
+## CONFIGURANDO CLI
+---
 ```bash
 Switch>ENABLE
 Switch#configure terminal
