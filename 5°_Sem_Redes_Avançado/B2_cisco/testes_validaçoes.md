@@ -30,3 +30,15 @@ demais documentos.
 
 # server web 
 ![image](https://github.com/user-attachments/assets/e985e41c-d7b7-4271-8ff9-208fd6f593ad)
+
+# melhorias
+
+Eu uso OSPF ou EIGRP com autenticação pra garantir que as rotas se ajustem rápido e com segurança.
+
+Crio túneis VPN (IPsec, DMVPN ou AnyConnect) pra trafegar dados criptografados entre minhas filiais e usuários remotos.
+
+Coloco firewalls – de preferência NGFW ou Zone‑Based – e configuro ACLs para filtrar e inspecionar todo o tráfego.
+
+Centralizo login e permissões com RADIUS/TACACS+ e ativo 802.1X nos switches para validar quem realmente pode entrar na rede.
+
+Separei tudo em VLANs, VRFs e até usei Private VLANs pra isolar serviços sensíveis e evitar que uma falha afete tudo.
