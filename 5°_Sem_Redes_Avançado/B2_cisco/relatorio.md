@@ -3,7 +3,7 @@
 **Curso:** Bacharelado em Sistemas de Informação – 5º Semestre  - IESGO
 
 ---
-# Comandosdo swtich principal 3560
+# Comandos do swtich principal 3560
 ```bash
 
 Switch>enable
