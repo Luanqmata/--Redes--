@@ -1,23 +1,23 @@
 
-Checklist de Verificação - TCD de Redes (Preenchível)
-Instruções: Marque [OK] cada item conforme for completando. Entregue este checklist junto com os
+# Checklist de Verificação - TCD de Redes (Preenchível)
+-- Instruções: Marque [OK] cada item conforme for completando. Entregue este checklist junto com os
 demais documentos.
-[x] .pkt entregue com a topologia funcional
-[x] VLANs corretamente configuradas e testadas
-[x] Roteamento inter-VLAN funcionando (Switch Layer 3)
-[x] ACLs implementadas conforme as regras de acesso entre setores
-[ ] Configuração de Port Security nas portas dos switches
-[ ] Acesso SSH habilitado no roteador (ou Switch L3)
-[x] DHCP Server funcionando para ao menos uma VLAN
-[x] Documentação técnica preenchida e formatada conforme modelo
-[x] Diagrama lógico da rede incluído no relatório
-[x] Testes de conectividade (ping/traceroute) entre os setores realizados
-[x] Plano de melhorias futuras apresentado (mínimo 3 itens)
-[x] ACLs explicadas e justificadas no relatório
-[ ] Rede Guest separada e com acesso restrito
-[x] Nome e IP dos servidores definidos no projeto
-Assinatura do Aluno: ____LUAN BRITO SOUSA CALAZANS____
-Data da Entrega: __13_ / _06__ / __2025__
+### [x] .pkt entregue com a topologia funcional
+### [x] VLANs corretamente configuradas e testadas
+### [x] Roteamento inter-VLAN funcionando (Switch Layer 3)
+### [x] ACLs implementadas conforme as regras de acesso entre setores
+### [ ] Configuração de Port Security nas portas dos switches
+### [ ] Acesso SSH habilitado no roteador (ou Switch L3)
+### [x] DHCP Server funcionando para ao menos uma VLAN
+### [x] Documentação técnica preenchida e formatada conforme modelo
+### [x] Diagrama lógico da rede incluído no relatório
+### [x] Testes de conectividade (ping/traceroute) entre os setores realizados
+### [x] Plano de melhorias futuras apresentado (mínimo 3 itens)
+### [x] ACLs explicadas e justificadas no relatório
+### [ ] Rede Guest separada e com acesso restrito
+### [x] Nome e IP dos servidores definidos no projeto
+### Assinatura do Aluno: ____LUAN BRITO SOUSA CALAZANS____
+### Data da Entrega: __13_ / _06__ / __2025__
 
 
 
