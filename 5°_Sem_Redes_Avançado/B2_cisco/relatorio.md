@@ -929,3 +929,60 @@ Switch(config-if)#no shutdown
 Switch(config-if)#exit
 Switch(config)#
 ```
+---
+# configurando roteador
+---
+```bash
+Router>
+Router>enable
+Router#interface GigabitEthernet0/0
+                 ^
+% Invalid input detected at '^' marker.
+	
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface GigabitEthernet0/0
+Router(config-if)#ip address 192.168.99.1 255.255.255.252
+Router(config-if)# no shutdown
+
+Router(config-if)#
+%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+interface GigabitEthernet0/1
+                 ^
+% Invalid input detected at '^' marker.
+	
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface GigabitEthernet0/1
+Router(config-if)#ip address 192.168.70.1 255.255.255.0
+Router(config-if)#no shutdown
+
+Router(config-if)#
+%LINK-5-CHANGED: Interface GigabitEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/1, changed state to up
+
+Router(config-if)#ip routing
+Router(config)#hostname Roteador2911
+Roteador2911(config)#ip domain-name redes.local
+Roteador2911(config)#crypto key generate rsa modulus 1024
+                                             ^
+% Invalid input detected at '^' marker.
+	
+Roteador2911(config)#username admin privilege 15 secret 1234
+Roteador2911(config)#crypto key generate rsa
+The name for the keys will be: Roteador2911.redes.local
+Choose the size of the key modulus in the range of 360 to 4096 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 512
+% Generating 512 bit RSA keys, keys will be non-exportable...[OK]
+
+Roteador2911(config)#
+```
